@@ -1,18 +1,8 @@
-#container1{
-    height: 100px;
-    background-color: #66CCFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 #header{
     color: black;  
-    max-width: 700px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #66CCFF;
+    padding: 10px;
+    text-align: center;
 }
 
 #container2{
@@ -20,6 +10,7 @@
     width: 900px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
 }
 #nav{
     width: 200px;
@@ -38,14 +29,22 @@ a {
 
 
 #footer{
+    padding: 10px;
     clear: both;
+    background-color: black;
+    color:white;
+    text-align: center;
 }
+
 
 body{
     background-color: #EEE;
     margin: 0;
-    padding-top: 0; 
+    
+    font-family: Helvetica,Arial, Helvetica;
 }
+
+
 #nav ul {
     list-style-type: none;
     padding: 0;
