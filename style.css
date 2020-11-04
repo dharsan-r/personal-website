@@ -27,14 +27,28 @@
     text-align: center;
 }
 
+#nav .selected{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+
 #footer{
     clear: both;
-    text-align: center;
 }
 
 body{
     background-color: #EEE;
     margin: 0;
     padding-top: 0; 
+}
+# nav ul {
+    list-style-type: none;
+    padding: 0;
+    
 }
 
