@@ -1,6 +1,9 @@
 #container1{
     background-color: #66CCFF;
     height: 100px;
+    margin: 0 !important;
+    padding: 0 !important;
+
 }
 
 #container2{
@@ -19,4 +22,6 @@ body{
 #header {
     color: black;
     text-align: center;
+    margin: 0 !important;
+    padding: 0 !important;
 }
