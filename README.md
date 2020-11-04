@@ -1,2 +1,2 @@
-# dharsan-r.github.io
+# personal-website.io
 My personal website, developed using HTML/CS/JS.
