@@ -15,7 +15,6 @@
 #nav{
     width: 200px;
     float: right;
-    text-align: center;
 }
 
 #nav .selected{
@@ -40,22 +39,16 @@ a {
 body{
     background-color: #EEE;
     margin: 0;
-    
     font-family: Times, sans-serif;
 }
 
-
-li #home::before{
-    content: "\Images\gitlogo.png";
-}
-
-li #home{
-    margin-left: -15px;
-}
-
-ul {
+#nav ul
+{
     list-style-type: none;
-    padding: 0;
-
 }
+
+#nav li{
+    margin: 20px;
+}
+
 
