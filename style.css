@@ -45,7 +45,15 @@ body{
 }
 
 
-#nav ul {
+li #home::before{
+    content: "\Images\gitlogo.png";
+}
+
+li #home{
+    margin-left: -15px;
+}
+
+ul {
     list-style-type: none;
     padding: 0;
 
