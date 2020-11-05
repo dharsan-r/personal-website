@@ -81,6 +81,7 @@ body{
 
 #nav ul
 {
+    padding-top: 15px;
     list-style-type: none;
     font-family: 'Times New Roman', Times, serif;
 }
