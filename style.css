@@ -112,8 +112,8 @@ a:hover{
 
 #par1{
     width: 100%;
-    padding-left: 1em;
     padding-right: 1em;
+    padding-left: 2em;
 }
 
 /*windowed resize */
@@ -152,6 +152,11 @@ a:hover{
         position: absolute;
         height: 0;
         padding:0;
+    }
+    #par1{
+        width: 95%;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
 
