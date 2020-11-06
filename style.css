@@ -22,6 +22,7 @@
 }
 
 #main {
+    padding-left:1em;
     padding-right: 1em;
     float: left;
     width: 50em;
@@ -154,7 +155,7 @@ a:hover{
     }
 }
 
-@media screen and (max-width:795px){
+@media screen and (max-width:797px){
    
 
 }
