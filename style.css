@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 .header{
     min-height: 100vh;
@@ -25,8 +26,47 @@ nav img{
     text-align: right;
 }
 .nav-links ul li{
+    font-weight: 600;
     list-style: none;
     display: inline-block;
     padding:  8px 12px;
     position: relative;
+    
+}
+.nav-links ul li a{
+    color: #757575;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: blue;
+    display:block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.about img{
+    width: 200px;
+    height: 200px;
+}
+.about{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+    
+.slow-ani{
+    animation-duration:5s;
+}
+.bio{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
