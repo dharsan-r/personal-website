@@ -53,8 +53,9 @@ nav img{
 .about{
     width: 90%;
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
+    margin-top: 3%;
     transform: translate(-50%,-50%);
 }
 .about img{
@@ -66,24 +67,27 @@ nav img{
 }
 
 .slow-ani{
-    margin-top: 17px;
+    margin-top: 12px;
     text-align:center;
     animation-duration:5s;
 }
 
 .bio{
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .bio p{
     margin-top: 15px;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 .socials li{
     list-style: none;
     display: inline-block;
-    margin: 2.5%;
+    margin-top: 1%;
+    margin-left:2.5% ;
+    margin-right: 2.5%;
+    margin-bottom: 0;
     padding:  10px;
     position: relative;
 }
@@ -107,4 +111,50 @@ nav img{
 
 .socials span{
     margin: -50%;
+}
+
+nav .option{
+    display: none;
+}
+nav .option2{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:#ff5656 ;
+        height: 100%;
+        overflow-x: hidden;
+        width: 200px;
+        top:0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    .nav-links ul li::after{
+        transition: 0.3s;
+    }
+    
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .option{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav .option2{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
 }
