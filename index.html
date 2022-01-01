@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="="en">
 <head> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title> Dharsan Ravindran </title>  
     <link rel="icon" href="Images/favicon.ico">
     <link rel="stylesheet" href="style.css"> 
@@ -16,22 +17,23 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="Images/logo.png"></a>
-            <div class="nav-links" id="nav-bar">
-                <div class="option" id ="option" onclick="hidemenu()">
-                    <i class="fa fa-times"></i>
-                </div>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="option2" onclick="showMenu()">
-                <i class="fa fa-bars"></i>
+
+            <ul class="nav-links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </nav>
+
         
+
         <div class="about">
             <a href="index.html"><img src="Images/dr-face.png"></a>
             <script defer src="ani.js" ></script>
@@ -74,18 +76,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Javascript for html toggle menu -->
-    <script>
-        function hidemenu(){
-            const nav = document.getElementById("nav-bar");
-            nav.style.right="-200px";
-        }
-        function showMenu(){
-            const nav = document.getElementById("nav-bar");
-            nav.style.right="0px";
-        }
-    </script>
+    <script src="mobile.js"></script>
 </body> 
 </html>
 
