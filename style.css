@@ -22,6 +22,7 @@ nav{
 nav img{
     width: 170px;
     height: 25px;
+    margin: 2px;
 }
 .nav-links{
     flex:1;
@@ -57,7 +58,7 @@ nav img{
     /*position: absolute;
     top: 50%;
     left: 50%;*/
-    margin:0 auto;
+    margin:1% auto;
     /*transform: translate(-50%,-50%);*/
 }
 .about img{
@@ -106,6 +107,7 @@ nav img{
     display: inline-block;
     text-decoration: none;
     z-index: -1;
+    margin-left:10px;
 }
 
 .socials{
@@ -121,10 +123,10 @@ nav img{
     cursor: pointer;
 }
 .burger div{
-    width: 25px;
-    height: 3px;
+    width: 22px;
+    height: 2.5px;
     background-color: black;
-    margin: 5px;
+    margin: 3.7px;
     transition: all 0.3s ease;
 }
 
@@ -157,7 +159,31 @@ nav img{
     }
     .burger{
         display: block;
-        z-index: 700;
+        z-index: 550;
+    }
+
+    nav img{
+        width: 130px;
+        height: 19.5px;
+        margin: 2px;
+    }
+    .about{
+        margin: 10% auto;
+    }
+    .about img{
+        width: 150px;
+        height: 150px;
+    }
+    .bio p{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 15px;
+    }
+    .socials a{
+        font-size: 15px;
+    }
+    .cog1{
+        font-size: 0.1rem;
     }
   }
   
@@ -178,12 +204,13 @@ nav img{
   }
 
 .toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-3px,6px);
 
 }
 .toggle .line2{
       opacity: 0;
 }
 .toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(45deg) translate(-3px,-6px);
 }
+html { overflow:auto; }
