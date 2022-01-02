@@ -286,7 +286,6 @@ nav img:hover{
 @media only screen and (max-width: 700px) {
     body{
         overflow-x: hidden;
-        overflow-y: auto;
     }
     .header{
         position: -webkit-sticky;
@@ -384,6 +383,7 @@ nav img:hover{
     transform: rotate(45deg) translate(-3px,-6px);
 }
 /*To stop side scrolling*/
+html { overflow:auto; }
 
 @keyframes change {
     0%{ color: black }
