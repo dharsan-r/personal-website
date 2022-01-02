@@ -170,6 +170,10 @@ nav img:hover{
     body{
         overflow-x: hidden;
     }
+    .page-nav{
+        position: -webkit-sticky;
+        position: sticky;
+    }
     .nav-links{
         position: absolute;
         right:0px;
@@ -256,4 +260,3 @@ nav img:hover{
 .toggle .line3{
     transform: rotate(45deg) translate(-3px,-6px);
 }
-html { overflow:auto; }

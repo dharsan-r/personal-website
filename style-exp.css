@@ -251,46 +251,10 @@ nav img:hover{
     text-decoration: none;
 }
 
-.programs li a:hover{
-    background-color: grey;
-    color: white;
-}
-.arduino{
-    background-color: 	#4fccf3;
-    color: black;
-}
-.c-plus{
-    background-color: 	#00455a;
-    color: rgb(255, 255, 255);
-}
-.python{
-    background-color: goldenrod;
-    color: white;
-}
-.javascript{
-    background-color: blue;
-    color: white;
-}
-.java{
-    background-color: crimson;
-    color: white;
-}
 
-.light{
-    font-size: 50px;
-    animation: change 3s infinite forwards;
-}
-.cog{
-    font-size: 1.8rem
-}
 @media only screen and (max-width: 700px) {
     body{
         overflow-x: hidden;
-        overflow-y: auto;
-    }
-    .header{
-        position: -webkit-sticky;
-        position: sticky;
     }
     .nav-links{
         position: absolute;
@@ -328,23 +292,21 @@ nav img:hover{
         font-size: 40px;
         padding-top: 1%;
     }
-    .light{
-        font-size: 35px;
-    }
-    .cog{
-        font-size: 1.2rem;
-    }
+
+
+
+
     .git-icon{
         font-size: 15px;
     }
     .git-button{
         padding-bottom: 1%;
     }
+
+
+
     nav{
         padding-top: 3%;
-    }
-    .col{
-        margin-bottom: 5%;
     }
   }
 
@@ -383,10 +345,6 @@ nav img:hover{
 .toggle .line3{
     transform: rotate(45deg) translate(-3px,-6px);
 }
-/*To stop side scrolling*/
 
-@keyframes change {
-    0%{ color: black }
-    70% { color: yellow }
-    100%{color: black}
-}
+
+
