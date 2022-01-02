@@ -15,6 +15,7 @@
 nav{
     display: flex;
     padding: 2% 6%;
+    padding-top:3%;
     background-color: #ffffff;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +25,7 @@ nav img{
     height: 25px;
     margin: 2px;
 }
+
 .nav-links{
     flex:1;
     text-align: right;
@@ -36,6 +38,7 @@ nav img{
     position: relative;
     
 }
+
 .nav-links li a{
     color: #757575;
     text-decoration: none;
@@ -67,6 +70,11 @@ nav img{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.about img:hover{
+    box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.3);
 }
 
 .slow-ani{
@@ -107,7 +115,6 @@ nav img{
     text-align: center;
     display: inline-block;
     text-decoration: none;
-    z-index: -1;
     margin-left:10px;
 }
 
@@ -143,7 +150,7 @@ nav img{
         position: absolute;
         right:0px;
         height: 100%;
-        width: 40%;
+        width: 50%;
         top: 0vh;
         background-color: gray;
         display: flex;
