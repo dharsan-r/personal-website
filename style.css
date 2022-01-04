@@ -165,14 +165,25 @@ nav img:hover{
     color:rgb(223, 165, 223);
 }
 
-
+footer{
+    background-color: none;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    margin-top: 50px;
+    clear: both;
+}
+hr{
+    align-self: center;
+    margin: auto;
+    
+}
 @media only screen and (max-width: 700px) {
     body{
         overflow-x: hidden;
     }
     .page-nav{
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed !important;
     }
     .nav-links{
         position: absolute;
@@ -208,7 +219,7 @@ nav img:hover{
         margin: 2px;
     }
     .about{
-        margin: 10% auto;
+        margin: 8vh auto;
     }
     .about img{
         width: 150px;
