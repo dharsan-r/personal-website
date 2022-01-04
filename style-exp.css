@@ -125,23 +125,7 @@ nav img:hover{
 .man-head{
     font-size: 1.8rem;
 }
-.resume-icon{
-    padding: 5px;
-    font-size: 20px;
-    width: 80%;
-    background-color: black;
-    text-align: center;
-    margin: 1% auto;
-    border-radius: 100px;
-    letter-spacing: 3px;
-    color: white;
-}
-.resume-button a{
-    text-decoration: none;
-}
-.resume-icon:hover{
-    background-color: rgb(223, 165, 223);
-}
+
 
 .exp{
     text-align: center;
@@ -168,6 +152,94 @@ nav img:hover{
 .shirt{
     font-size: 50px;
     animation: change 4s infinite forwards;
+}
+
+.buttons{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.buttons ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+}
+.buttons ul li{
+    display: inline-block;
+    padding: 5px;
+    background-color: black;
+    margin: 1.5% auto;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    width: 45%;
+    margin-right: 1%;
+    color: white;
+}
+.buttons ul a{
+    text-decoration: none;
+}
+
+.buttons li{
+    padding: 16px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.buttons li:hover{
+    background-color: rgb(223, 165, 223);
+}
+
+
+footer{
+    width: 100%;
+    background-color: none;
+    align-items: center;
+    position: relative;
+    min-height: 100px;
+    margin-top: 7%;
+    clear: both;
+}
+hr{
+    align-self: center;
+    margin: auto;
+}
+.footer-socials{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.footer-socials ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 15px auto;
+}
+.footer-socials ul li{
+    display: inline-block;
+}
+.footer-socials li a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+}
+.footer-socials li a:hover{
+    color: blue;
+}
+.copyright{
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 15px;
+}
+.copyright a {
+    text-decoration: none;
+    color: gray;
+}
+.copyright a:hover{
+    color: blue;
 }
 
 @media only screen and (max-width: 700px) {
@@ -217,20 +289,32 @@ nav img:hover{
         font-size: 1.3rem;
     }
 
-    .resume-icon{
-        font-size: 15px;
-        margin: 1.5% auto;
-    }
-    .resume-button{
-        padding-bottom: 1%;
-    }
-
-
     nav{
         padding-top: 3%;
     }
-}
 
+    .footer-socials li a{
+        padding: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        color: gray;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .buttons{
+        width: 80%;
+    }
+    .buttons ul li{
+        font-size: 15px;
+    }
+}
+@media (max-width: 780px){
+    .buttons ul li{
+        width: 100%;
+        display: block;
+    }
+}
 
 /*Nav animations for mobile*/
 .nav-active{

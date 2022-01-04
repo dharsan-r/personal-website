@@ -162,22 +162,62 @@ nav img:hover{
 }
 .socials a:hover{
     border: solid #fd7b7b;
-    color:rgb(223, 165, 223);
+    color:blue;
 }
 
 footer{
+    width: 100%;
     background-color: none;
     align-items: center;
     position: relative;
-    height: 100px;
-    margin-top: 50px;
+    min-height: 100px;
+    margin-top: 10%;
     clear: both;
 }
 hr{
     align-self: center;
     margin: auto;
-    
 }
+.footer-socials{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.footer-socials ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 15px auto;
+}
+.footer-socials ul li{
+    display: inline-block;
+}
+.footer-socials li a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+}
+.footer-socials li a:hover{
+    color: blue;
+}
+
+
+.copyright{
+    text-align: center;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 15px;
+}
+.copyright a {
+    text-decoration: none;
+    color: gray;
+}
+.copyright a:hover{
+    color: blue;
+}
+
+
 @media only screen and (max-width: 700px) {
     body{
         overflow-x: hidden;
@@ -243,7 +283,16 @@ hr{
     nav{
         padding-top: 3%;
     }
-  }
+    .footer-socials li a{
+        padding: 12px;
+        text-decoration: none;
+        font-size: 15px;
+        color: gray;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}
   
   .nav-active{
       transform: translateX(0);
