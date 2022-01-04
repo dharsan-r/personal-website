@@ -288,8 +288,10 @@ nav img:hover{
         overflow-x: hidden;
     }
     .header{
-        position: -webkit-sticky;
-        position: sticky;
+        position: fixed !important;
+    }
+    .title{
+        margin-top:7vh ;
     }
     .nav-links{
         position: absolute;

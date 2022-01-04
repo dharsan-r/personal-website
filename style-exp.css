@@ -109,9 +109,9 @@ nav img:hover{
     background-size: cover;
     position: relative;
     text-align: center;
-    font-size: 52px;
     padding-bottom: 0%;
     margin-bottom: 0%;
+    font-size: 55px;
 }
 
 .title a{
@@ -122,13 +122,16 @@ nav img:hover{
     padding-left: 20px;
     position: relative;
 }
+.man-head{
+    font-size: 1.8rem;
+}
 .resume-icon{
     padding: 5px;
     font-size: 20px;
     width: 80%;
     background-color: black;
     text-align: center;
-    margin: 1.5% auto;
+    margin: 1% auto;
     border-radius: 100px;
     letter-spacing: 3px;
     color: white;
@@ -163,7 +166,8 @@ nav img:hover{
 }
 
 .shirt{
-    font-size: 45px;
+    font-size: 50px;
+    animation: change 4s infinite forwards;
 }
 
 @media only screen and (max-width: 700px) {
@@ -203,20 +207,23 @@ nav img:hover{
         margin: 2px;
     }
     .title{
-        font-size: 40px;
+        font-size: 35px;
         padding-top: 1%;
     }
-
-
-
+    .shirt{
+        font-size: 35px;
+    }
+    .man-head{
+        font-size: 1.3rem;
+    }
 
     .resume-icon{
         font-size: 15px;
+        margin: 1.5% auto;
     }
     .resume-button{
         padding-bottom: 1%;
     }
-
 
 
     nav{
@@ -257,5 +264,10 @@ html{
     overflow-x: hidden;
 }
 
-
+@keyframes change {
+    0%{ color: black }
+    33% { color: rgb(255, 108, 108) }
+    66%{color: rgb(98, 0, 255)}
+    100%{color: black;}
+}
 
