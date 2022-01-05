@@ -156,7 +156,7 @@ nav img:hover{
 
 .buttons{
     margin: auto;
-    width: 90%;
+    width: 80%;
     text-align: center;
 }
 
@@ -175,7 +175,6 @@ nav img:hover{
     border-radius: 100px;
     letter-spacing: 2px;
     width: 45%;
-    margin-right: 1%;
     color: white;
 }
 .buttons ul a{
@@ -183,7 +182,7 @@ nav img:hover{
 }
 
 .buttons li{
-    padding: 16px;
+    padding: 15px;
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
@@ -241,6 +240,72 @@ hr{
 .copyright a:hover{
     color: blue;
 }
+.exp-card{
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
+    font-size: 15px;
+    width: 71%;
+    margin: auto;
+    background: #fff3f3;
+    border-radius: 5px;
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.exp-card:hover{
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.4);
+}
+.exp-header{
+    padding-top: 2px;
+    width: 100%;
+}
+.exp-header img{
+    float: right;
+}
+
+.hr-img img{
+    height:50px;
+    width: 200px;
+}
+.asus-img img{
+    height: 55.6px;
+    width: 200px;
+}
+.title1{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.position{
+    font-weight: 15px;
+    font-weight: bold;
+    color: rgb(122, 119, 255);
+}
+.about{
+    margin-top: 20px;
+    clear: all;
+    display: block;
+    padding-left: 50px;
+}
+.about ul{
+    list-style: square;
+}
+.about ul li{
+    padding-top:7px ;
+}
+.sub-list{
+    padding-left: 25px;
+}
+.sub-list li{
+    list-style: disc;
+}
+
 
 @media only screen and (max-width: 700px) {
     body{
