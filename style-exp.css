@@ -311,6 +311,12 @@ hr{
     body{
         overflow-x: hidden;
     }
+    .header{
+        position: fixed !important;
+    }
+    .title{
+        margin-top:7vh ;
+    }
     .nav-links{
         position: absolute;
         right:0px;
