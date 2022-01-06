@@ -191,6 +191,68 @@ nav img:hover{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons2{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.buttons2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+}
+.buttons2 ul li{
+    display: inline-block;
+    padding: 5px;
+    margin:auto;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    width: 20%;
+    color: rgb(0, 0, 0);
+}
+.buttons2 ul a{
+    text-decoration: none;
+}
+
+.buttons2 li{
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.work li{
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.volun li:hover{
+    color: rgba(132, 100, 219, 0.726);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
 footer{
     width: 100%;
     background-color: none;
@@ -275,7 +337,7 @@ hr{
     width: 200px;
 }
 .asus-img img{
-    height: 55.6px;
+    height: 47.7px;
     width: 200px;
 }
 .title1{
@@ -304,7 +366,9 @@ hr{
 }
 .sub-list li{
     list-style: disc;
+    margin-bottom: -5px;
 }
+
 
 
 @media only screen and (max-width: 700px) {
@@ -351,7 +415,7 @@ hr{
     }
     .title{
         font-size: 35px;
-        padding-top: 1%;
+        padding-top: 2%;
     }
     .shirt{
         font-size: 35px;
@@ -379,11 +443,38 @@ hr{
     .buttons ul li{
         font-size: 15px;
     }
+    .buttons2{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .buttons ul li{
+        font-size: 15px;
+        width: 50%;
+    }
+    .exp-card{
+        margin-bottom: 5%;
+    }
+    .exp-header img{
+        display: inline-block;
+    }
 }
 @media (max-width: 780px){
     .buttons ul li{
         width: 100%;
         display: block;
+    }
+    .buttons2 ul li{
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+    }
+    .buttons2{
+        margin-top: 7px;
+        padding-bottom: 9px;
+    }
+    .exp-card{
+        width: 80%;
     }
 }
 
