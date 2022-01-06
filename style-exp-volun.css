@@ -192,24 +192,6 @@ nav img:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .buttons2{
     margin: auto;
     width: 80%;
@@ -241,12 +223,12 @@ nav img:hover{
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
-.work li{
+.volun li{
     font-weight: bolder;
     font-size: 20px;
     text-decoration: underline;
 }
-.volun li:hover{
+.work li:hover{
     color: rgba(132, 100, 219, 0.726);
     font-weight: bolder;
     text-decoration: underline;
@@ -336,9 +318,9 @@ hr{
     height:50px;
     width: 200px;
 }
-.asus-img img{
-    height: 47.7px;
-    width: 200px;
+.qweb-img img{
+    width: 161.4px;
+    height: 60px;
 }
 .title1{
     font-size: 22px;
@@ -454,12 +436,13 @@ hr{
     }
     .exp-card{
         margin-bottom: 5%;
+        margin-bottom: 5%;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .asus-img img{
+    .qweb-img img{
         width: 75px;
-        height: 18px;
+        height: 27px;
     }
     .hr-img img{
         width: 75px;
