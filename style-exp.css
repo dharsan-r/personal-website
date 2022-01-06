@@ -369,8 +369,25 @@ hr{
     margin-bottom: -5px;
 }
 
+.title-text:hover{
+    color: #4fccf3;
+}
 
-
+.nav-links span a{
+    color: black;
+    pointer-events: none;
+}
+.nav-links span a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: blue;
+    display:block;
+    margin: auto;
+}
+.no-hover{
+    pointer-events: none;
+}
 @media only screen and (max-width: 700px) {
     body{
         overflow-x: hidden;
@@ -387,7 +404,7 @@ hr{
         height: 100vh;
         width: 40%;
         top: 0vh;
-        background-color: gray;
+        background-color: #7393B3;
         display: flex;
         flex-direction: column;
         align-items: center;
