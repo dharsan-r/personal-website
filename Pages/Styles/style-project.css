@@ -154,15 +154,49 @@ nav img:hover{
     color: black;
     margin-bottom: 15px;
     font-weight: bold;
+}
+
+
+
+.project-git2 a{
+    text-decoration: none;
+}
+.project-git2{
+    text-align:center;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin-top: 1.1%;
     
     
 }
+.git-icon2{
+    padding: 6px;
+    font-size: 15px;
+    margin-left:7px;
+    margin-right:7px;
+    background-color: rgb(255, 119, 119);
+    text-align: center;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+    
+}
+
+
 .project-git a{
     text-decoration: none;
 }
 .git-icon1:hover{
     background-color: rgb(223, 165, 223);
 }
+
+.git-icon2:hover{
+    background-color: rgb(223, 165, 223);
+}
+
 
 .projects{
     text-align: center;
@@ -207,6 +241,17 @@ nav img:hover{
 .col:hover{
     box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
 }
+
+.eco-pic img{
+    width: 120px;
+    height: 120px;
+}
+
+.dark-pic img{
+    width: 350px;
+    height: 120px;
+}
+
 .aac-pic img{
     width: 215px;
     height: 125px;
@@ -256,6 +301,10 @@ nav img:hover{
     background-color: grey;
     color: white;
 }
+
+
+
+
 .arduino{
     background-color: 	#4fccf3;
     color: black;
@@ -276,6 +325,31 @@ nav img:hover{
     background-color: crimson;
     color: white;
 }
+.azure{
+    background-color: #F41A89;
+    color: white;
+}
+.android{
+    background-color: #A4C639;
+    color: white;
+}
+.tensor{
+    background-color: royalblue;
+    color: white;
+}
+.webGL{
+    background-color: red;
+    color: white;
+}
+.unity{
+    background-color: black;
+    color: white;
+}
+.csharp{
+    background-color: rgb(23, 141, 33);
+    color: white;
+}
+
 
 .light{
     font-size: 50px;
@@ -430,6 +504,11 @@ hr{
     }
     .copyright{
         font-size: 12px;
+    }
+    .git-icon2{
+        padding: 5px;
+        margin-left: 3px;
+        margin-right: 3px;
     }
 }
 
