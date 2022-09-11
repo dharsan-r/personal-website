@@ -248,8 +248,10 @@ nav img:hover{
 }
 
 .dark-pic img{
-    width: 350px;
-    height: 120px;
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .aac-pic img{
@@ -331,10 +333,6 @@ nav img:hover{
 }
 .android{
     background-color: #A4C639;
-    color: white;
-}
-.tensor{
-    background-color: royalblue;
     color: white;
 }
 .webGL{
