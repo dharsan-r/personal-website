@@ -1,3 +1,0 @@
-RewriteEngine On
-
-RewriteRule ^Pages/(.*)$ /$1 [L,NC,R=302]

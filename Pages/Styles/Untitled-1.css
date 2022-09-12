@@ -3,8 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.header{
+.page{
     width: 100%;
     height: 100%;
     background-color: none;
@@ -12,8 +11,7 @@
     margin: 0;
     padding: 0;
 }
-
-.page-nav{
+.header{
     min-height: 6vh;
     width: 100%;
     background-color: white ;
@@ -33,18 +31,11 @@
 }
 
 
-
-
-
-
-
-
-
 nav{
     display: flex;
     padding: 2% 6%;
     padding-top: 2%;
-    padding-bottom: 0.5%;
+    margin-bottom: 0.5%;
     background-color: #ffffff;
     justify-content: space-between;
     align-items: center;
@@ -118,95 +109,25 @@ nav img:hover{
     background-size: cover;
     position: relative;
     text-align: center;
-    font-size: 60px;
     padding-bottom: 0%;
     margin-bottom: 0%;
+    font-size: 55px;
 }
 
 .title a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    font-size: 60px;
+    font-size: 52px;
     text-decoration: none;
     padding-left: 20px;
     position: relative;
 }
-.git-icon{
-    padding: 5px;
-    font-size: 20px;
-    width: 80%;
-    background-color: black;
-    text-align: center;
-    margin: 1.5% auto;
-    border-radius: 100px;
-    letter-spacing: 3px;
-    color: white;
-}
-.git-button a{
-    text-decoration: none;
-}
-.git-icon:hover{
-    background-color: rgb(223, 165, 223);
+.man-head{
+    font-size: 1.8rem;
 }
 
 
-.git-icon1{
-    padding: 5px;
-    font-size: 15px;
-    width: 80%;
-    background-color: rgb(255, 119, 119);
-    text-align: center;
-    margin: 1.5% auto;
-    border-radius: 100px;
-    letter-spacing: 2px;
-    color: black;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-
-
-.project-git2 a{
-    text-decoration: none;
-}
-.project-git2{
-    text-align:center;
-    display: inline-grid;
-    grid-template-columns: 1fr 1fr;
-    width: 80%;
-    margin-top: 1.1%;
-    
-    
-}
-.git-icon2{
-    padding: 6px;
-    font-size: 15px;
-    margin-left:7px;
-    margin-right:7px;
-    background-color: rgb(255, 119, 119);
-    text-align: center;
-    border-radius: 100px;
-    letter-spacing: 2px;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 15px;
-    
-}
-
-
-.project-git a{
-    text-decoration: none;
-}
-.git-icon1:hover{
-    background-color: rgb(223, 165, 223);
-}
-
-.git-icon2:hover{
-    background-color: rgb(223, 165, 223);
-}
-
-
-.projects{
+.exp{
     text-align: center;
     z-index: 10;
     position: relative;
@@ -214,20 +135,7 @@ nav img:hover{
     margin: auto;
     font-family: 'Montserrat','sans-serif';
 }
-.projects h3{
-    font-weight: bold;
-    font-size: 20px;
-    margin: 10px 0;
-    margin-left: 5% ;
-    margin-right:5% ;
-}
-.projects p{
-    font-size: 15px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    line-height: 22px;
-}
+
 .row{
     margin-top: 0;
     display: flex;
@@ -237,133 +145,113 @@ nav img:hover{
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.col{
-    flex-basis: 49%;
-    background: #fff3f3;
-    border-radius: 10px;
-    margin-bottom: 1.5%;
-    padding-top: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
 .col:hover{
     box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
 }
 
-.eco-pic img{
-    width: 120px;
-    height: 120px;
+.shirt{
+    font-size: 50px;
+    animation: change 4s infinite forwards;
 }
 
-.dark-pic img{
-    width: 250px;
-    height: 80px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.aac-pic img{
-    width: 215px;
-    height: 125px;
-}
-.ws-api-pic img{
-    width: 120px;
-    height: 120px;
-    margin-top: 5px;
-}
-.moni-heal-pic img{
-    width: 135px;
-    height: 120px;
-    margin-top: 5px;
-}
-.za-pic img{
-    width: 173px;
-    height: 125px;
-}
-
-.programs{
-    flex: 1;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-.programs li{
-    list-style: none;
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
-    position: relative;
-}
-.programs li a{
-    text-decoration: none;
-    font-size: 15px;
-    padding: 5px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 100%;
+.buttons{
+    margin: auto;
+    width: 80%;
     text-align: center;
-    margin: 0% auto;
-    border-radius: 10px;
-    text-decoration: none;
 }
 
-.programs li a:hover{
-    background-color: grey;
+.buttons ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+}
+.buttons ul li{
+    display: inline-block;
+    padding: 5px;
+    background-color: black;
+    margin: 1.5% auto;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    width: 45%;
     color: white;
 }
-
-
-
-
-.arduino{
-    background-color: 	#4fccf3;
-    color: black;
+.buttons ul a{
+    text-decoration: none;
 }
-.c-plus{
-    background-color: 	#00455a;
+
+.buttons li{
+    padding: 15px;
+    font-size: 20px;
     color: rgb(255, 255, 255);
 }
-.python{
-    background-color: goldenrod;
-    color: white;
-}
-.javascript{
-    background-color: blue;
-    color: white;
-}
-.java{
-    background-color: crimson;
-    color: white;
-}
-.azure{
-    background-color: #F41A89;
-    color: white;
-}
-.android{
-    background-color: #A4C639;
-    color: white;
-}
-.webGL{
-    background-color: red;
-    color: white;
-}
-.unity{
-    background-color: black;
-    color: white;
-}
-.csharp{
-    background-color: rgb(23, 141, 33);
-    color: white;
+.buttons li:hover{
+    background-color: rgb(223, 165, 223);
 }
 
 
-.light{
-    font-size: 50px;
-    animation: change 3s infinite forwards;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons2{
+    margin: auto;
+    width: 80%;
+    text-align: center;
 }
-.cog{
-    font-size: 1.8rem
+
+.buttons2 ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
 }
+.buttons2 ul li{
+    display: inline-block;
+    padding: 5px;
+    margin:auto;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    width: 20%;
+    color: rgb(0, 0, 0);
+}
+.buttons2 ul a{
+    text-decoration: none;
+}
+
+.buttons2 li{
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.work li{
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.volun li:hover{
+    color: rgba(132, 100, 219, 0.726);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
 
 footer{
     width: 100%;
@@ -406,13 +294,6 @@ hr{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
     font-size: 15px;
-    color: gray;
-}
-
-.copyright{
-    text-align: center;
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 15px;
 }
 .copyright a {
     text-decoration: none;
@@ -421,7 +302,76 @@ hr{
 .copyright a:hover{
     color: blue;
 }
+.exp-card{
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
+    font-size: 15px;
+    width: 71%;
+    margin: auto;
+    background: #fff3f3;
+    border-radius: 5px;
+    margin-bottom: 1.5%;
+    margin-top: 1%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.exp-card:hover{
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.4);
+}
+.exp-header{
+    padding-top: 2px;
+    width: 100%;
+}
+.exp-header img{
+    float: right;
+}
 
+.hr-img img{
+    height:50px;
+    width: 200px;
+}
+.asus-img img{
+    height: 47.7px;
+    width: 200px;
+}
+.title1{
+    font-size: 22px;
+    font-weight: bolder;
+}
+.position{
+    font-weight: 15px;
+    font-weight: bold;
+    color: rgb(122, 119, 255);
+}
+.about{
+    margin-top: 20px;
+    clear: all;
+    display: block;
+    padding-left: 50px;
+}
+.about ul{
+    list-style: square;
+}
+.about ul li{
+    padding-top:7px ;
+}
+.sub-list{
+    padding-left: 25px;
+}
+.sub-list li{
+    list-style: disc;
+    margin-bottom: -5px;
+}
+
+.title-text:hover{
+    color: #4fccf3;
+}
 
 .nav-links span a{
     color: black;
@@ -481,27 +431,20 @@ hr{
         margin: 2px;
     }
     .title{
-        font-size: 40px;
+        font-size: 35px;
         padding-top: 2%;
     }
-    .light{
+    .shirt{
         font-size: 35px;
     }
-    .cog{
-        font-size: 1.2rem;
+    .man-head{
+        font-size: 1.3rem;
     }
-    .git-icon{
-        font-size: 15px;
-    }
-    .git-button{
-        padding-bottom: 1%;
-    }
+
     nav{
         padding-top: 3%;
     }
-    .col{
-        margin-bottom: 5%;
-    }
+
     .footer-socials li a{
         padding: 12px;
         text-decoration: none;
@@ -511,25 +454,65 @@ hr{
     .copyright{
         font-size: 12px;
     }
-    .git-icon2{
-        padding: 5px;
-        margin-left: 3px;
-        margin-right: 3px;
+    .buttons{
+        width: 80%;
+    }
+    .buttons ul li{
+        font-size: 15px;
+    }
+    .buttons2{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .buttons ul li{
+        font-size: 15px;
+        width: 50%;
+    }
+    .exp-card{
+        margin-bottom: 5%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .asus-img img{
+        width: 75px;
+        height: 18px;
+    }
+    .hr-img img{
+        width: 75px;
+        height: 19px;
+    }
+    .about{
+        margin-top: 5px;
+        clear: all;
+        display: block;
+        padding-left: 18px;
     }
 }
-
-/*project cards flex for mobile*/
-@media (max-width: 820px){
-      .row{
-          flex-direction: column;
-      }
-  }
-
+@media (max-width: 780px){
+    .buttons ul li{
+        width: 100%;
+        display: block;
+    }
+    .buttons2 ul li{
+        width: 100%;
+        font-size: 20px;
+        padding: 2px;
+    }
+    .buttons2{
+        margin-top: 7px;
+        padding-bottom: 9px;
+    }
+    .exp-card{
+        width: 80%;
+    }
+    
+}
 
 /*Nav animations for mobile*/
 .nav-active{
       transform: translateX(0);
-  }
+}
 
 @keyframes navLinkFade{
     from{
@@ -553,11 +536,15 @@ hr{
 .toggle .line3{
     transform: rotate(45deg) translate(-3px,-6px);
 }
-/*To stop side scrolling*/
-html { overflow:auto; }
+
+html{
+    overflow-x: hidden;
+}
 
 @keyframes change {
     0%{ color: black }
-    70% { color: yellow }
-    100%{color: black}
+    33% { color: rgb(255, 108, 108) }
+    66%{color: rgb(98, 0, 255)}
+    100%{color: black;}
 }
+
