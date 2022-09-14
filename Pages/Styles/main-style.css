@@ -42,6 +42,7 @@ nav{
     transition: 0.6s;
 }
 nav img{
+    position: relative;
     width: 170px;
     height: 25px;
     margin: 2px;
@@ -91,13 +92,13 @@ nav img:hover{
     height: 2.5px;
     background-color: black;
     margin: 3.7px;
-    transition: all 0.3s ease;
+    transition: all 0.17s ease;
 }
 
 
 
 
-
+/*home page*/
 .about{
     width: 90%;
     margin:4% auto;
@@ -167,6 +168,10 @@ nav img:hover{
     color:blue;
 }
 
+
+
+
+/* footer*/
 footer{
     width: 100%;
     background-color: none;
@@ -205,7 +210,6 @@ hr{
     color: blue;
 }
 
-
 .copyright{
     text-align: center;
     font-family: 'Montserrat', 'sans-serif';
@@ -235,9 +239,12 @@ hr{
 }
 
 
+
+
+
+
+
 /* Projects Page CSS */
-
-
 .title-text:hover{
     color: #4fccf3;
 }
@@ -499,6 +506,8 @@ hr{
 
 
 
+
+/*Experience page css*/
 
 
 
