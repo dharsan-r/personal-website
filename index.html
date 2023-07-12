@@ -1,105 +1,250 @@
 <!DOCTYPE html>
-<html lang="="en">
-<head> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Dharsan Ravindran </title>  
-    <link rel="icon" href="Images/favicon.ico">
-    <link rel="stylesheet" href="Pages/Styles/main-style.css"> 
-    <link rel="preconnect" hreddf="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,300;1,400&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f0fbea6894.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="font-awesome-animation.min.css">
-    <!---<meta name="apple-mobile-web-app-capable" content="yes" />--->
+    <title>Dharsan Ravindran</title>
+
+    <!-- Used for  all of the Font Awsome Icons and the Devicons-->
+    <link rel="stylesheet" href="./dist/css/all.min.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <script defer src="./dist/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Used for the fade in animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link used for                 animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Script to retrieve data from the GithubAPI for my projects -->
+    <script type="module">
+        import { Octokit, App } from "https://esm.sh/octokit";
+    </script>
+
 </head>
 
 <body>
-    <section class="header">
-        <section class="page-nav">
-        <nav>
-            <a href="index.html"><img src="Images/logo.png"></a>
-            <ul class="nav-links">
-                <li class="no-hover"><span><a href="index.html">Home</a></span></li>
-                <!-- <li><a href="Pages/projects.html">Projects</a></li>
-                <li><a href="Pages/exp2.html#top5" >Work</a></li>
-                <li><a href="Pages/exp2.html#top1">Volunteer</a></li> -->
-            </ul>
+    <video playsinline autoplay muted loop poster="cake.jpg">
+        <source src="dist/images/vecteezy_abstract-floating-3d-balls-in-air_7999712_596.mp4" type="video/mp4">
+    </video>
 
 
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </section>
-        
 
-        <div class="about">
-            <a href="index.html"><img src="Images/building.gif"></a>
-            <script defer src="Pages/Animations/ani.js" ></script>
-            <div class="cogs slow-ani" style="font-size: 0.4rem; background-color: none;">
-                <i class="fas fa-cog fa-4x fa-spin" data-fa-transform="down-5  right-5"></i>
-                <i class="fas fa-cog fa-3x fa-spin" data-fa-transform="down-17 right-3"></i>
-                <i class="fas fa-cog fa-5x fa-spin" data-fa-transform="left-7"></i>
-            </div>
-
-            <div class="bio">
-                <p>
-                    Hi, I'm Dharsan Ravindran! My website is currently getting revamped, so please check back soon!
-                </p>
-           
-            </div>
-            
-        
-            <div class="socials">
+    <section>
+        <!-- Main page card background -->
+        <div class="container">
+            <!-- Div used to refrence top of page when scrolling to top or menu clicks -->
+            <div id="top" class="page-scroll"></div>
+            <header>
+                <a href="#top" class="logo">Dharsan R.</a>
                 <ul>
-                    <li> 
-                        <a href="https://www.linkedin.com/in/dharsanravi/" target="_blank"> <i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
-                    </li>
-                    <li> 
-                        <a href="https://github.com/dharsan-r" target="_blank"> <i class="fab fa-github-alt"></i><span>GitHub</span></a>
-                    </li>
-                    <li> 
-                        <a href="Resume/Dharsan-Ravindran-Resume.pdf" target="_blank"> <i class="fas fa-file-alt"></i><span>Resume</span></a>
-                    </li>
-                    <li> 
-                        <a href="mailto:dharsan.ravi07@gmail.com"><i class="fas fa-paper-plane"></i><span>Email</span></a>
-                    </li>
+                    <li><a class="current" href="#top" id="home-btn">Home</a></li>
+                    <li><a class="not-current" href="#projects" id="proj-btn">Projects</a></li>
+                    <li><a class="not-current" href="#experience" id="exp-btn">Experience</a></li>
                 </ul>
+            </header>
+
+            <!-- Main intro content -->
+            <div class="about">
+
+                <div class="profile">
+                    <img src="./dist/images/profile.png" data-aos="fade-up-right" data-aos-duration="1000" />
+                </div>
+
+                <div class="about-card">
+                    <h2 data-aos="fade-down" data-aos-duration="1000">Hi there! I'm Dharsan</h2>
+                    <p data-aos="fade-right" data-aos-duration="1000">
+                        I'm a current Queen's Computing Student doing my specialization in Software Design.
+                        I love machine learning, the cloud, and all things tech.
+                        I enjoy building things that make my life easier, and cooking in my free time.
+                    </p>
+
+                    <img data-aos="fade-up" data-aos-duration="2000" src="dist/images/eggs/catwave.gif" />
+                    <div class="about-footer">
+                        <ul>
+                            
+                        </ul>
+
+                        <span><i class="fas fa-envelope-square fa-3x"></i></span>
+                        <span><i class="fab fa-github-square fa-3x"></i></span>
+                        <span><i class="fab fa-linkedin fa-3x"></i></span>
+                        <span><i class="far fa-user-circle fa-3x"></i></span>
+                    
+                    </div>
+
+                </div>
+                <!-- Place the 4 icons here and do a fade up on it, do a sequence on it to step fade them in one at a time -->
+
+
             </div>
+            <hr class="page-scroll">
+
+            <span>
+                <h1 id="projects" class="projects-title">Projects</h1>
+            </span>
+            <img class="boba" data-aos="in" data-aos-duration="1000" src="./dist/images/eggs/boba.gif" />
+
+            <div class="project-cards">
+
+                <div class="project-info" 
+                onclick="window.open('https://github.com/dharsan-r/EcoWare.ai' + location.search)">
+
+                    <img src="dist/images/projects/eco-ware.jpeg" />
+                    <div class="project-text">
+                        <i class="far fa-bookmark"></i><a href="https://github.com/dharsan-r/EcoWare.ai">
+                            EcoWare.ai</a><br>
+
+                        <p class="hello">
+                            <br>
+                            EcoWare.ai is an android app that uses Tensor Flow Machine Learning models and Azure to sort
+                            and
+                            classify trash for safe
+                            disposal.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-info" data-aos="fade-up" data-aos-duration="1000"
+                    onclick="window.open('https://github.com/dharsan-r/Dark-Split' + location.search)">
+
+                    <img src="dist/images/projects/dark.jpeg" />
+                    <div class="project-text">
+                        <i class="far fa-bookmark"></i><a href="https://github.com/dharsan-r/Dark-Split">
+                            Dark-Split</a><br>
+
+                        <p class="hello">
+                            <br>
+                            My personal portfolioi website designed and developed by me. Art sourced from LINE and
+                            Shuterstock.
+                            (This is kind of Meta).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-info" data-aos="fade-up" data-aos-duration="1000"
+                onclick="window.open('https://github.com/dharsan-r/Auto-Aid-Cart' + location.search)">
+
+                    <img src="dist/images/projects/aac.jpeg" />
+                    <div class="project-text">
+                        <i class="far fa-bookmark"></i><a href="https://github.com/dharsan-r/Auto-Aid-Cart">
+                            AutoAidCart</a><br>
+
+                        <p class="hello">
+                            <br>
+                            This is teh auto aid card it knind of works in the fornt but is ugly in the back
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-info" data-aos="fade-up" data-aos-duration="1000"
+                onclick="window.open('https://github.com/dharsan-r/personal-website' + location.search)">
+
+                    <img src="dist/images/projects/site.jpeg" />
+                    <div class="project-text">
+                        <i class="far fa-bookmark"></i><a href="https://github.com/dharsan-r/personal-website">
+                            Personal Website</a><br>
+
+                        <p class="hello">
+                            <br>
+                            My personal portfolioi website designed and developed by me. Art sourced from LINE and
+                            Shuterstock.
+                            (This is kind of Meta).
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="page-scroll">
+
+            <div class="exp-box">
+                <div class="test">
+                    <h1 id="experience" class="exp-title">Experience</h1>
+                    <img class="boba2" data-aos="in" data-aos-duration="1000" src="./dist/images/eggs/peachy.gif" />
+                </div>
+
+                <div class="exp-row">
+                    <div class="exp-col" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="cibc-pic">
+                            <img src="./dist/images/exp/CIBC_logo_2021.svg.png" />
+                        </div>
+                        <h3>Project Management Intern</h3>
+                        <p class="dates">April 2023 – Present</p>
+
+                    </div>
+                    <div class="exp-col" data-aos="fade-up" data-aos-duration="1400">
+                        <div class="cibc-pic">
+                            <img src="./dist/images/exp/CIBC_logo_2021.svg.png" />
+                        </div>
+                        <h3>Software Developer/
+                            <br>Innovation Engineer Intern
+                        </h3>
+                        <p class="dates">Sept. 2022 – April 2023</p>
+                    </div>
+                    <div class="exp-col" data-aos="fade-up" data-aos-duration="1800">
+                        <div class="queen-pic">
+                            <img src="./dist/images/exp/QueensLogo_colour.png" />
+
+                        </div>
+                        <h3>Teaching Assitant</h3>
+                        <p class="dates">April 2022 – Present</p>
+
+
+
+                    </div>
+                </div>
+
+                <div class="exp-row">
+                    <div class="exp-col" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="cibc-pic">
+                            <img src="./dist/images/exp/CIBC_logo_2021.svg.png" />
+                        </div>
+                        <h3>Project Management Intern</h3>
+                        <p class="dates">April 2023 – Present</p>
+
+                    </div>
+                    <div class="exp-col" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="cibc-pic">
+                            <img src="./dist/images/exp/CIBC_logo_2021.svg.png" />
+                        </div>
+                        <h3>Software Developer/
+                            <br>Innovation Engineer Intern
+                        </h3>
+                        <p class="dates">Sept. 2022 – April 2023</p>
+                    </div>
+                    <div class="exp-col" style="opacity: 0;" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="cibc-pic">
+                            <img src="./dist/images/exp/CIBC_logo_2021.svg.png" />
+                        </div>
+                        <h3>Software Developer/
+                            <br>Innovation Engineer Intern
+                        </h3>
+                        <p class="dates">Sept. 2022 – April 2023</p>
+                    </div>
+                    
+                    
+                </div>
+
+
+
+            </div>
+
         </div>
     </section>
 
-    <footer>
-        <hr size="2" width="90%" color="#A9A9A9">
-        <div class="footer-socials">
-            <ul>
-                <li> 
-                    <a href="https://www.linkedin.com/in/dharsanravi/" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
-                </li>
-                <li> 
-                    <a href="https://github.com/dharsan-r" target="_blank"> <i class="fab fa-github-alt"></i></a>
-                </li>
-                <li> 
-                    <a href="Resume/Dharsan-Ravindran-Resume.pdf" target="_blank"> 
-                        <i class="fas fa-file-alt"></i></a>
-                </li>
-                <li> 
-                    <a href="mailto:dharsan.ravi07@gmail.com"><i class="fas fa-envelope"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <a href="https://github.com/dharsan-r" target="_blank">
-            Designed and Developed by Dharsan Ravindran © 2022.
-            </a>
-        </div>
-     </footer>
 
 
-    <script src="Pages/Animations/mobile.js"></script>
-</body> 
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="module" src="./dist/js/git-repo.js"></script>
+</body>
+
+
+
+
 </html>
-
