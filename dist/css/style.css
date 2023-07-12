@@ -100,7 +100,6 @@ header ul {
 }
 
 
-
 header ul li a {
     display: inline-block;
     text-decoration: none;
@@ -242,7 +241,6 @@ hr:after {
 
 .exp-box {
     width: 100%;
-    text-align: c;
   
 }
 
@@ -319,11 +317,11 @@ hr:after {
 
 @media screen and (max-width: 1200px) {
     .section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 0px;
     }
 
     .about{
@@ -338,4 +336,78 @@ hr:after {
     .container{
         width: 100%;
     }
+    .exp-row{
+        flex-direction: column;
+
+    }
+    .exp-col{
+        margin-bottom:20px ;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    
+    .container{
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
+    }
+    header{
+        visibility: hidden;
+    }
+
+    .profile img{
+        width: 160px;
+    }
+    section{
+        padding: 10px;
+    }
+
+    .cibc-pic img{
+        width: 100px;
+    }
+    .cibc-pic{
+        padding-top: 10%;
+        margin: auto;
+        width: 50%;
+        padding-bottom: 10px;
+    }
+    
+    .queen-pic img{
+        width: 100px;
+    }
+    .queen-pic{
+        margin: auto;
+        width: 40%;
+        padding-bottom: 10px;
+    }
+
+    .exp-col{
+        margin-bottom: 3%;
+    }
+
+    #maya{
+        margin: -70px;
+    }
+    .about-card{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    .about-footer{
+        padding-top: 20px;
+    }
+    .about-card img {
+        padding-right: -30px;
+        padding-top: 10px;
+        margin-bottom: -0px;
+        width: 90px;
+        float: center;
+        visibility: hidden;
+    }
+    .about-card span {
+        padding-right: 20px;
+    
+    }
+
 }
