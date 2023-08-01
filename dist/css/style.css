@@ -17,7 +17,6 @@ body {
     background: radial-gradient(circle,
             rgba(238, 174, 202, 1) 0%,
             rgba(148, 187, 233, 1) 100%);
-    max-width: 100%;
 }
 
 video {
@@ -25,6 +24,7 @@ video {
     right: 0;
     bottom: 0;
     min-width: 100%;
+    overflow-y: hidden;
     min-height: 100%;
     z-index: -10;
     filter: blur(9px);
@@ -40,6 +40,7 @@ section {
     align-items: center;
     min-height: 100vh;
     padding: 60px;
+    overflow-y: hidden;
 }
 
 
