@@ -17,15 +17,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Link used for                 animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <!-- Script to retrieve data from the GithubAPI for my projects -->
-    <script type="module">
-        import { Octokit, App } from "https://esm.sh/octokit";
-    </script>
+
 
 </head>
 
 <body>
-    <video playsinline autoplay muted loop poster="cake.jpg">
+    
+    <video playsinline autoplay muted loop>
         <source src="dist/images/vecteezy_abstract-floating-3d-balls-in-air_7999712_596.mp4" type="video/mp4">
     </video>
 
@@ -49,27 +47,30 @@
             <div class="about">
 
                 <div class="profile">
-                    <img src="./dist/images/profile.png" data-aos="fade-up-right" data-aos-duration="1000" />
+                    <img src="./dist/images/profile.png" data-aos="fade-up-right" data-aos-duration="500" />
                 </div>
 
                 <div class="about-card">
-                    <h2 data-aos="fade-down" data-aos-duration="1000">Hi there! I'm Dharsan</h2>
-                    <p data-aos="fade-right" data-aos-duration="1000">
+                    <h2 data-aos="fade-down" data-aos-duration="500">Hi there! I'm Dharsan</h2>
+                    <p data-aos="fade-right" data-aos-duration="500">
                         I'm a current Queen's Computing Student doing my specialization in Software Design.
                         I love machine learning, the cloud, and all things tech.
                         I enjoy building things that make my life easier, and cooking in my free time.
                     </p>
 
-                    <img data-aos="fade-up" data-aos-duration="2000" src="dist/images/eggs/catwave.gif" />
+                    <img data-aos="fade-up" data-aos-duration="1000" src="dist/images/eggs/catwave.gif" />
                     <div class="about-footer">
-                        <span onclick="window.open('mailto:dharsan.ravi07@gmail.com' + location.search)"><i class="fas fa-envelope-square fa-3x"></i></span>
-                        <span onclick="window.open('https://github.com/dharsan-r' + location.search)"><i class="fab fa-github-square fa-3x"></i></span>
-                        <span onclick="window.open('https://www.linkedin.com/in/dharsanravi/' + location.search)"><i class="fab fa-linkedin fa-3x"></i></span>
+                        <span onclick="window.open('mailto:dharsan.ravi07@gmail.com' + location.search)"><i
+                                class="fas fa-envelope-square fa-3x"></i></span>
+                        <span onclick="window.open('https://github.com/dharsan-r' + location.search)"><i
+                                class="fab fa-github-square fa-3x"></i></span>
+                        <span onclick="window.open('https://www.linkedin.com/in/dharsanravi/' + location.search)"><i
+                                class="fab fa-linkedin fa-3x"></i></span>
                         <span class="hello"><i class="far fa-user-circle fa-3x"></i></span>
-                    
+
                     </div>
 
-                    
+
 
                 </div>
                 <!-- Place the 4 icons here and do a fade up on it, do a sequence on it to step fade them in one at a time -->
@@ -85,8 +86,8 @@
 
             <div class="project-cards">
 
-                <div class="project-info" 
-                onclick="window.open('https://github.com/dharsan-r/EcoWare.ai' + location.search)">
+                <div class="project-info"
+                    onclick="window.open('https://github.com/dharsan-r/EcoWare.ai' + location.search)">
 
                     <img src="dist/images/projects/eco-ware.jpeg" />
                     <div class="project-text">
@@ -113,13 +114,14 @@
 
                         <p class="hello">
                             <br>
-                            This is a game I developed with two other developers, it a 3-D platformer with a unique twist.
+                            This is a game I developed with two other developers, it a 3-D platformer with a unique
+                            twist.
                         </p>
                     </div>
                 </div>
 
                 <div class="project-info" data-aos="fade-up" data-aos-duration="1000"
-                onclick="window.open('https://github.com/dharsan-r/Auto-Aid-Cart' + location.search)">
+                    onclick="window.open('https://github.com/dharsan-r/Auto-Aid-Cart' + location.search)">
 
                     <img src="dist/images/projects/aac.jpeg" />
                     <div class="project-text">
@@ -134,7 +136,7 @@
                 </div>
 
                 <div class="project-info" data-aos="fade-up" data-aos-duration="1000"
-                onclick="window.open('https://github.com/dharsan-r/personal-website' + location.search)">
+                    onclick="window.open('https://github.com/dharsan-r/personal-website' + location.search)">
 
                     <img src="dist/images/projects/site.jpeg" />
                     <div class="project-text">
@@ -155,12 +157,12 @@
             <hr class="page-scroll">
             <span>
                 <h1 id="exp" class="projects-title">Experience</h1>
-                </span>
-                <img class="boba" data-aos="in" data-aos-duration="1000" src="./dist/images/eggs/peachy.gif" />
+            </span>
+            <img class="boba" data-aos="in" data-aos-duration="1000" src="./dist/images/eggs/peachy.gif" />
             <div class="exp-box">
-                
-                
-    
+
+
+
 
                 <div class="exp-row">
                     <div class="exp-col" data-aos="fade-up" data-aos-duration="1000">
@@ -220,9 +222,9 @@
                         <h3>Peer Tutor
                         </h3>
                         <p class="dates">Sept. 2022 – April 2023</p>
-                        
+
                     </div>
-                    
+
                 </div>
 
 
@@ -240,7 +242,19 @@
         AOS.init();
     </script>
 
-    <script type="module" src="./dist/js/git-repo.js"></script>
+
+    <script>
+        var docWidth = document.documentElement.offsetWidth;
+        [].forEach.call(
+            document.querySelectorAll('*'),
+            function (el) {
+                if (el.offsetWidth > docWidth) {
+                    console.log(el);
+                }
+            }
+        );
+    </script>
+
 </body>
 
 
