@@ -31,15 +31,7 @@ video {
 }
 
 
-::-webkit-scrollbar {
-    width: 6px;
-    background: inherit;
-}
 
-::-webkit-scrollbar-thumb {
-    background: #4577af;
-    border-radius: 10px;
-}
 
 
 section {
