@@ -33,18 +33,21 @@
         <!-- Main page card background -->
         <div class="container">
             <!-- Div used to refrence top of page when scrolling to top or menu clicks -->
-            <div id="top" class="page-scroll"></div>
+            
             <header>
                 <a href="#top" class="logo">Dharsan R.</a>
                 <ul>
-                    <li><a class="current" href="#top" id="home-btn">Home</a></li>
-                    <li><a class="not-current" href="#projects" id="proj-btn">Projects</a></li>
-                    <li><a class="not-current" href="#experience" id="exp-btn">Experience</a></li>
+                    <li><a class="top current" href="#top" id="home-btn">Home</a></li>
+                    <li><a class="top1" href="#top1" id="proj-btn">Projects</a></li>
+                    <li><a class="top2" href="#top2" id="exp-btn">Experience</a></li>
                 </ul>
             </header>
-
+            
             <!-- Main intro content -->
             <div class="about">
+                <span>
+                    <a class="anchor" id="top"></a>
+                </span>
 
                 <div class="profile">
                     <img src="./dist/images/profile.png" data-aos="fade-up-right" data-aos-duration="500" />
@@ -75,11 +78,15 @@
                 </div>
                 <!-- Place the 4 icons here and do a fade up on it, do a sequence on it to step fade them in one at a time -->
 
+                <span>
+                    <a class="anchorb" id="b"></a>
+                </span>
 
             </div>
             <hr class="page-scroll">
 
             <span>
+                <a class="anchor" id="top1"></a>
                 <h1 id="projects" class="projects-title">Projects</h1>
             </span>
             <img class="boba" data-aos="in" data-aos-duration="1000" src="./dist/images/eggs/boba.gif" />
@@ -151,12 +158,15 @@
                         </p>
                     </div>
                 </div>
-
+                <span>
+                    <a class="anchorb" id="b1"></a>
+                </span>
             </div>
 
             <hr class="page-scroll">
             <span>
-                <h1 id="exp" class="projects-title">Experience</h1>
+                <a class="anchor" id="top2"></a>
+                <h1 id="experience" class="projects-title">Experience</h1>
             </span>
             <img class="boba" data-aos="in" data-aos-duration="1000" src="./dist/images/eggs/peachy.gif" />
             <div class="exp-box">
@@ -227,6 +237,9 @@
 
                 </div>
 
+                <span>
+                    <a class="anchorb" id="b2"></a>
+                </span>
             </div>
 
         </div>
@@ -240,6 +253,7 @@
         AOS.init();
     </script>
 
+    <script src="dist/js/scrollmenu.js"></script>
 
     <script>
         var docWidth = document.documentElement.offsetWidth;

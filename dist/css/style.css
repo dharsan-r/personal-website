@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
 html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
@@ -95,17 +96,7 @@ header ul {
 }
 
 
-header ul li a {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-    padding: 8px 15px;
-    margin: 0 10px;
-    border-radius: 1rem;
-    transition: 500ms ease;
-    font-size: 18px;
-}
+
 
 .logo {
     color: black;
@@ -118,6 +109,18 @@ header ul li a:hover,
 header ul li a.current {
     background: hsla(0, 0%, 100%, 1);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding: 8px 15px;
+    margin: 0 10px;
+    border-radius: 1rem;
+    transition: 500ms ease;
+    font-size: 18px;
 }
 
 .about {
@@ -158,6 +161,20 @@ header ul li a.current {
 
 .projects-title {
     font-size: 40px;
+    
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
+a.anchorb {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
 }
 
 
