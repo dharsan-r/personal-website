@@ -50,7 +50,7 @@
                 </span>
 
                 <div class="profile">
-                    <img src="./dist/images/profile.png" data-aos="fade-up-right" data-aos-duration="500" />
+                    <img rel="preload" src="./dist/images/profile.png" data-aos="fade-up-right" data-aos-duration="500" />
                 </div>
 
                 <div class="about-card">
@@ -268,6 +268,12 @@
             }
         );
     </script>
+
+<script>
+    window.onload = function () {
+      console.log('Loaded');
+    }
+  </script>
 
 </body>
 
