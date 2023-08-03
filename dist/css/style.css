@@ -95,9 +95,6 @@ header ul {
     list-style: none;
 }
 
-
-
-
 .logo {
     color: black;
     font-weight: 500;
@@ -105,11 +102,6 @@ header ul {
     font-size: 30px;
 }
 
-header ul li a:hover,
-header ul li a.current {
-    background: hsla(0, 0%, 100%, 1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
 
 header ul li a {
     display: inline-block;
@@ -122,6 +114,19 @@ header ul li a {
     transition: 500ms ease;
     font-size: 18px;
 }
+
+header ul li a:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.current a {
+    background: hsla(0, 0%, 100%, 1);
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
 
 .about {
     display: flex;

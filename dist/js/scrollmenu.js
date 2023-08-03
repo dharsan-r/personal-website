@@ -8,27 +8,26 @@ window.addEventListener("scroll", () => {
     for (let i = 0; i < sections.length; i++) {
         const sectionTop = sections[i].offsetTop;
         const sectionBot = sections2[i].offsetTop;
+
+        
         if (pageYOffset >= sectionTop && pageYOffset <=sectionBot) {
             current = sections[i].getAttribute("id");
-            console.log(current)
-            
+        }else if(pageYOffset<sections[1].offsetTop){
+          current = sections[0].getAttribute("id");
         }
 
     }
 
 
-    // sections.forEach((section) => {
-    //   const sectionTop = section.offsetTop;
-    //   if (pageYOffset >= sectionTop) {
-    //     current = section.getAttribute("id");
-    //     console.log(current)
-    //   }
-    // });
   
     navLi.forEach((li) => {
+      
+      // console.log(current)
+      li.classList.remove("current");
       if (li.classList.contains(current)) {
         li.classList.add("current");
-        console.log(li.classList)
       }
     });
+
+
   });
