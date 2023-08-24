@@ -62,9 +62,16 @@ section {
     margin-top: 60px;
 
 }
-span:hover{
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+.fa-envelope-square:hover,
+.fa-github-square:hover,
+.fa-linkedin:hover,
+.fa-user-circle:hover{
+    color: rgb(255, 84, 84);
+    filter:drop-shadow(3px 3px 1px rgb(105, 105, 105));
+    transition: all 0.3s ease;
 }
+
+
 
 .profile img {
     max-width: 300px;
