@@ -2,6 +2,8 @@ const sections = document.querySelectorAll(".anchor");
 const sections2 = document.querySelectorAll(".anchorb");
 const navLi = document.querySelectorAll("header ul li");
 
+
+
 window.addEventListener("scroll", () => {
     let current = "";
 
@@ -29,5 +31,5 @@ window.addEventListener("scroll", () => {
       }
     });
 
+});
 
-  });

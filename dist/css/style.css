@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
+@import "compass/css3";
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -119,6 +120,41 @@ header ul li a:hover{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     font-weight: bold;
 }
+
+header ul li ul{
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    right: -10;
+    display: none;
+}
+
+.mob a{
+    display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus, 
+ul li ul li:active{
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+
+
 
 .current a {
     background: hsla(0, 0%, 100%, 1);
@@ -332,7 +368,30 @@ hr:after {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media (pointer:none), (pointer:coarse) {
+    header ul li a:hover{
+        box-shadow: none;
+    }
+    header ul li a:active{
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        font-weight: bold;
+    }
+}
+
 @media screen and (max-width: 1200px) {
+    
+
     .section{
         display: flex;
         justify-content: center;
@@ -363,20 +422,37 @@ hr:after {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     
     .container{
         width: 100%;
         padding: 10px;
-        margin-top: 0;
+        margin-top: 120px;
     }
 
     body{
         max-width: 100%;
     }
 
+    .logo {
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+
+    #home-btn,
+    .top1,
+    .top2{
+        display: none;
+    }
     header{
-        visibility: hidden;
+        padding: 10px;
+    }
+
+    .mob a{
+        display: inline-block;
     }
 
     .profile img{
