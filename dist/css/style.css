@@ -398,7 +398,6 @@ hr:after {
 }
 
 @media screen and (max-width: 1200px) {
-    
 
     .section{
         display: flex;
@@ -435,7 +434,7 @@ hr:after {
     .container{
         width: 100%;
         padding: 10px;
-        margin-top: 120px;
+        margin-top: 70px;
     }
 
     body{
@@ -457,11 +456,12 @@ hr:after {
     }
     header{
         padding: 10px;
+        width: 90%;
     }
 
-    .mob a{
+    /* .mob a{
         display: inline-block;
-    }
+    }  */
 
     .profile img{
         width: 160px;
