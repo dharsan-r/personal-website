@@ -13,6 +13,8 @@ html {
     box-sizing: border-box;
 }
 
+
+
 body {
     background-size: cover;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -20,6 +22,8 @@ body {
 	animation: gradient 20s ease infinite;
 	height: 100%;
 }
+
+
 
 
 @keyframes gradient {
@@ -96,6 +100,53 @@ header {
     width: calc(100% - 80px);
 }
 
+
+
+#myLinks{
+    display: none;
+    position: fixed;
+    top: 57px;
+    right: 0px;
+    background: rgba(45, 203, 255, 0.95);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    z-index: 90;
+    display: none;
+    width: 150px;
+}
+
+#myLinks ul li{
+    list-style: none;
+    display: block;
+}
+#myLinks ul{
+    padding-bottom: 10px;
+}
+
+#myLinks a{
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+
+
+header a.icon {
+    color: #000000;
+    display: block;
+    position: absolute;
+    margin: auto;
+    right: 20px;
+    display: none;
+}
+
+
+
+
+
 header ul {
     margin-top: 10px;
     flex-wrap: wrap;
@@ -129,36 +180,10 @@ header ul li a:hover{
     font-weight: bold;
 }
 
-header ul li ul{
-    background: orange;
-    visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    right: -10;
-    display: none;
-}
 
-.mob a{
-    display: none;
-}
 
-ul li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus, 
-ul li ul li:active{
-   visibility: visible;
-   opacity: 1;
-   display: block;
-}
 
-ul li ul li {
-  clear: both;
-  width: 100%;
-}
+
 
 
 
@@ -216,13 +241,15 @@ ul li ul li {
 a.anchor {
     display: block;
     position: relative;
-    top: -150px;
+    margin-top: -210px;
+    padding-top: 200px;
     visibility: hidden;
 }
 a.anchorb {
     display: block;
     position: relative;
-    top: -150px;
+    margin-top: -210px;
+    padding-top: 200px;
     visibility: hidden;
 }
 
@@ -430,11 +457,17 @@ hr:after {
 
 
 @media screen and (max-width: 900px) {
-    
+    header a.icon{
+        display: block;
+    }
+
+
     .container{
         width: 100%;
         padding: 10px;
-        margin-top: 70px;
+    }
+    section{
+        padding: 10px;
     }
 
     body{
@@ -459,16 +492,11 @@ hr:after {
         width: 90%;
     }
 
-    /* .mob a{
-        display: inline-block;
-    }  */
 
     .profile img{
         width: 160px;
     }
-    section{
-        padding: 10px;
-    }
+   
 
     .cibc-pic img{
         width: 100px;
@@ -493,9 +521,6 @@ hr:after {
         margin-bottom: 3%;
     }
 
-    #maya{
-        margin: -70px;
-    }
     .about-card{
         margin-left: 2px;
         margin-right: 2px;
@@ -516,4 +541,9 @@ hr:after {
     
     }
 
+    a.anchorb {
+        padding-top: 250px;
+    }
+
+  
 }

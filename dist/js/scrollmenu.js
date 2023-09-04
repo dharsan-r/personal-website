@@ -4,6 +4,7 @@ const navLi = document.querySelectorAll("header ul li");
 
 
 
+
 window.addEventListener("scroll", () => {
     let current = "";
 

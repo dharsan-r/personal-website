@@ -27,10 +27,7 @@
 
 
     <section>
-        <!-- Main page card background -->
-
-
-        
+        <!-- Main page card background -->        
 
         <div class="container">
             <!-- Div used to refrence top of page when scrolling to top or menu clicks -->
@@ -41,14 +38,20 @@
                     <li class="top current"><a href="#" id="home-btn">Home</a></li>
                     <li class="top1"><a href="#top1" id="proj-btn">Projects</a></li>
                     <li class="top2"><a href="#top2" id="exp-btn">Experience</a></li>
-                    <li class="mob"><a>Two</a>
-                        <ul class="dropdown">
-                          <li class="top"><a href="#">Home</a></li>
-                          <li><a href="#top1">Projects</a></li>
-                          <li><a href="#top2">Experience</a></li>
-                        </ul>
-                    </li>
                 </ul>
+                <div id="myLinks">
+                    <ul>
+                        <li class="top current"><a href="#" id="home-btn" onclick="myFunction()">Home</a></li>
+                        <li class="top1"><a href="#top1" id="proj-btn" onclick="myFunction()">Projects</a></li>
+                        <li class="top2"><a href="#top2" id="exp-btn" onclick="myFunction()">Experience</a></li>
+                    </ul>
+                  </div>
+                  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+
+
             </header>
             
             <!-- Main intro content -->
@@ -277,6 +280,17 @@
             }
         );
     </script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 
 <script>
     window.onload = function () {
